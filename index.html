@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carpenters Portal</title>
+    <meta name="description" content="Carpenters portal för hyresgäster – avier, felanmälan och information." />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Hoppa till innehåll</a>
+
+    <header class="header">
+      <div class="container header__inner">
+        <a class="brand" href="#">
+          <img src="assets/logo.png" alt="Carpenter" class="brand__logo" />
+          <span class="brand__name">Carpenters Portal</span>
+        </a>
+
+        <nav class="nav">
+          <a class="nav__link" href="#start">Start</a>
+          <a class="nav__link" href="#info">Mer information</a>
+          <button class="btn btn--primary" id="loginBtn" type="button">Logga in</button>
+        </nav>
+
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="Öppna meny" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+
+      <div class="mobile-nav container" id="mobileNav" hidden>
+        <a class="mobile-nav__link" href="#start">Start</a>
+        <a class="mobile-nav__link" href="#info">Mer information</a>
+        <button class="btn btn--primary mobile-nav__btn" id="loginBtnMobile" type="button">Logga in</button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="start">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <h1>Välkommen till Carpenters portal</h1>
+            <p class="lead">
+              Logga in med BankID för att se dina avier, göra felanmälan och uppdatera dina uppgifter.
+            </p>
+
+            <div class="hero__actions">
+              <button class="btn btn--primary btn--lg" id="ctaLogin" type="button">
+                Logga in med BankID
+              </button>
+              <a class="btn btn--ghost btn--lg" href="#info">Läs mer</a>
+            </div>
+
+            <div class="trust">
+              <div class="pill">Snabbt</div>
+              <div class="pill">Säkert</div>
+              <div class="pill">Mobilvänligt</div>
+            </div>
+          </div>
+
+          <div class="hero__panel">
+            <h2 class="panel-title">Vanliga ärenden</h2>
+
+            <div class="cards">
+              <a class="card" href="#" aria-label="Se mina avier">
+                <div class="card__icon">🧾</div>
+                <div class="card__text">
+                  <div class="card__title">Se mina avier</div>
+                  <div class="card__desc">Hämta och se betalningsunderlag.</div>
+                </div>
+              </a>
+
+              <a class="card" href="#" aria-label="Göra felanmälan">
+                <div class="card__icon">🛠️</div>
+                <div class="card__text">
+                  <div class="card__title">Gör en felanmälan</div>
+                  <div class="card__desc">Skicka in ärende och följ status.</div>
+                </div>
+              </a>
+
+              <a class="card" href="#" aria-label="Uppdatera kontaktuppgifter">
+                <div class="card__icon">👤</div>
+                <div class="card__text">
+                  <div class="card__title">Kontaktuppgifter</div>
+                  <div class="card__desc">Uppdatera telefon och e-post.</div>
+                </div>
+              </a>
+
+              <a class="card" href="#info" aria-label="Ta del av viktig information">
+                <div class="card__icon">📢</div>
+                <div class="card__text">
+                  <div class="card__title">Viktig information</div>
+                  <div class="card__desc">Driftstörningar, nyheter och tips.</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="panel-note">
+              <strong>Tips:</strong> Har du problem med inloggningen? Kontakta kundtjänst.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="info">
+        <div class="container">
+          <div class="section__head">
+            <h2>Mer information</h2>
+            <p>Här kan du hitta information om områden och praktiska frågor.</p>
+          </div>
+
+          <div class="info-grid">
+            <div class="info-box">
+              <h3>Områden</h3>
+              <ul class="link-list">
+                <li><a href="#">Stenåldern</a></li>
+                <li><a href="#">Södra Källtorp</a></li>
+                <li><a href="#">Fäbodvallen</a></li>
+                <li><a href="#">Kartbladet 32</a></li>
+                <li><a href="#">Östra Nibble 111:7</a></li>
+                <li><a href="#">Tvättmaskinen</a></li>
+                <li><a href="#">Skultuna Tibble</a></li>
+              </ul>
+            </div>
+
+            <div class="info-box">
+              <h3>Så funkar portalen</h3>
+              <ol class="steps">
+                <li>Klicka på <strong>Logga in</strong>.</li>
+                <li>Verifiera med BankID.</li>
+                <li>Välj ärende: avier, felanmälan eller uppgifter.</li>
+              </ol>
+              <div class="mini-cta">
+                <button class="btn btn--primary" id="ctaLogin2" type="button">Logga in</button>
+                <a class="btn btn--ghost" href="#">Kontakta oss</a>
+              </div>
+            </div>
+
+            <div class="info-box">
+              <h3>Kontakt</h3>
+              <p class="muted">Exempeltext – byt till rätt kontaktvägar.</p>
+              <ul class="contact">
+                <li>📞 <a href="tel:+4621123456">021-123 456</a></li>
+                <li>✉️ <a href="mailto:info@carpenter.se">info@carpenter.se</a></li>
+                <li>🕘 Mån–Fre 09:00–15:00</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container footer__inner">
+          <div class="footer__left">
+            <img src="assets/logo.png" alt="" class="footer__logo" />
+            <div>
+              <div class="footer__title">Carpenters Portal</div>
+              <div class="footer__small">© <span id="year"></span> Carpenter</div>
+            </div>
+          </div>
+          <div class="footer__right">
+            <a href="#start">Till toppen</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <div class="modal" id="loginModal" aria-hidden="true">
+      <div class="modal__backdrop" data-close="true"></div>
+      <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+        <h2 id="loginTitle">Logga in</h2>
+        <p class="muted">
+          Här kan ni koppla vidare till er riktiga inloggning/portal.
+          Just nu är detta en demo.
+        </p>
+        <div class="modal__actions">
+          <a class="btn btn--primary" href="#" id="goToPortal">Fortsätt</a>
+          <button class="btn btn--ghost" type="button" data-close="true">Stäng</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
